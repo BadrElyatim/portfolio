@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --clr-cyan-400: #12F7D6;
+  --clr-cyan-300: #98FAEC;
+  --clr-gray-400: #43454D;
+  --clr-white: #FFFFFF;
+
+  --bg-black-400: #1A1E23;
+  --bg-black-300: #292F36;
+
+  --ff-ubuntu: 'Ubuntu', 'Sans-serif';
+  --ff-IBM: 'IBM Plex Mono', 'Sans-serif';
+}
