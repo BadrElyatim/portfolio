@@ -2,8 +2,6 @@ import classes from './index.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
-
-
 const Header = () => {
     return (
         <header className={classes.header}>

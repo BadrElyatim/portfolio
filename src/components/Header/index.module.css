@@ -2,6 +2,8 @@
     font-family: var(--ff-IBM);
     background-color: var(--bg-black-300);
     color: var(--clr-white);
+    position: sticky;
+    top: 0;
 }
 
 .content {
@@ -9,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--clr-gray-400);
 }
 
 .logo {

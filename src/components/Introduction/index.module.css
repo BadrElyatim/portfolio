@@ -1,0 +1,226 @@
+.introduction {
+    background-color: var(--bg-black-300);
+    color: var(--clr-white);
+    font-family: var(--ff-IBM);
+    padding-bottom: 6em;
+}
+
+.container {
+    padding-inline: 9em;
+}
+
+.header {
+    text-align: center;
+    font-size: var(--fs-117);
+    color: var(--clr-cyan-300);
+    font-family: var(--ff-ubuntu);
+    font-weight: var(--fw-regular);
+    padding-block: .36em;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.card {
+    border: 4px solid var(--clr-white);
+    padding: 2em 3.3em;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-shadow: -4px -4px 2px 0px var(--clr-cyan-400);
+    text-wrap: nowrap;
+}
+
+.profilePhotoWrapper {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-image: url(../../assets/profile-photo.png);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid var(--clr-cyan-400);
+    margin-inline: auto;
+    margin-bottom: 8px;
+}
+
+.firstName,
+.job {
+    text-align: center;
+}
+
+.firstName {
+    font-size: var(--fs-32);
+    font-weight: var(--fw-medium);
+    line-height: 1.4;
+}
+
+.job {
+    font-size: var(--fs-14);
+    margin-bottom: 2em;
+}
+
+.card ul li {
+    font-size: var(--fs-14);
+    margin-bottom: .8em;
+    display: flex;
+    align-items: center;
+    gap: 1.1em;
+}
+
+.icon {
+    color: var(--clr-cyan-400);
+}
+
+.card .downloadBtn {
+    color: var(--bg-black-400);
+    padding: 0.5em 1.8em;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1.3em;
+    font-family: var(--ff-ubuntu);
+    font-size: var(--fs-20);
+    display: flex;
+    align-items: center;
+    gap: .8em;
+    cursor: pointer;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.whoAmi {
+    margin-top: 2.5em;
+}
+
+.tagWrapper {
+    margin-bottom: 1em;
+}
+
+.tagWrapper h1 {
+    font-size: var(--fs-64);
+    font-family: var(--ff-ubuntu);
+    font-weight: var(--fw-regular);
+    line-height: 1.1;
+    text-wrap: nowrap;
+}
+
+.tagWrapper h1 span {
+    color: var(--clr-cyan-400);
+}
+
+.tagWrapper p {
+    font-family: var(--ff-IBM);
+    line-height: 1.2;
+}
+
+.tagWrapper> :not(.tag) {
+    margin-left: 25px;
+    margin-block: .2em;
+}
+
+.tag {
+    color: var(--clr-cyan-300);
+    font-family: var(--ff-IBM);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-regular);
+}
+
+.letsTalk {
+    font-size: var(--fs-32);
+    font-weight: var(--fw-medium);
+    color: var(--clr-cyan-400);
+    font-family: var(--ff-IBM);
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.letsTalk .icon {
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: var(--clr-gray-400);
+
+}
+
+.stats {
+    background-color: var(--bg-black-400);
+    padding: 3em 2em;
+    border-radius: 20%;
+    font-family: var(--ff-IBM);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stats li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    line-height: 1.2;
+}
+
+.stats li:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.stats li span {
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-48);
+    color: var(--clr-cyan-400);
+}
+
+@media (max-width: 1600px) {
+    .container {
+        padding-inline: 2em;
+    }
+
+    .introduction .aboutMe {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-inline: auto;
+    }
+
+    .card ul {
+        width: max-content;
+        margin-inline: auto;
+    }
+
+    .downloadBtn {
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .rightSide {
+        flex-direction: column;
+    }
+    
+    .stats {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        margin-top: 4em;
+    }
+
+    .aboutMe {
+        gap: 2em;
+    }
+
+    .tagWrapper h1 {
+        font-size: var(--fs-32);
+    }
+
+    .header {
+        display: none;
+    }
+}
