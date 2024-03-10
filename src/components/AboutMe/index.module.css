@@ -1,0 +1,127 @@
+.aboutMe {
+    background-color: rgb(26, 30, 35, 1);
+    position: relative;
+    padding-block: 6em;
+    color: var(--clr-white);
+    z-index: -1;
+}
+
+.container {
+    padding-inline: 10em;
+}
+
+.aboutMe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/aboutMe-background.png);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.mouseWrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+
+.title {
+    font-family: var(--ff-ubuntu);
+    font-size: var(--fs-64);
+    font-weight: var(--fw-regular);
+    width: max-content;
+    background-color: var(--bg-black-300);
+    padding: .05em .5em;
+    border: 1px solid var(--clr-cyan-400);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 1em;
+}
+
+.tag {
+    color: var(--clr-cyan-300);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-regular);
+}
+
+.tagWrapper {
+    font-family: var(--ff-IBM);
+    background-color: var(--bg-black-300);
+    padding: 1.5em 2.5em;
+    border-radius: 30px;
+}
+
+.tagWrapper .tag:first-child {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.tagWrapper .tag:last-child {
+    display: block;
+    margin-top: 1em;
+}
+
+.hello {
+    font-size: var(--fs-32);
+    color: var(--clr-cyan-400);
+    font-weight: var(--fw-medium);
+}
+
+.tagWrapper p:not(.hello) {
+    padding-block: .5em;
+}
+
+.tagWrapper p:last-child {
+    padding-bottom: 0 !important;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 8em;
+}
+
+.content img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.content .imgWrapper {
+    align-self: end;
+    max-width: 462px;
+}
+
+@media (max-width: 1600px) {
+    .content {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .content .imgWrapper  {
+        align-self: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding-inline: 2em;
+    }
+    .mouseWrapper {
+        display: none;
+    }
+
+    .title {
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: var(--fs-32);
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
