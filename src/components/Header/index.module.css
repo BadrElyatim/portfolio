@@ -35,12 +35,26 @@
     gap: 3em;
 }
 
-ul li a{
+.links ul li a{
     display: flex;
     align-items: center;
     gap: .5em;
     text-decoration: none;
     color: var(--clr-white);
+}
+
+.links ul li::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: var(--clr-cyan-400);
+    margin-top: 1px;
+    width: 0;
+    transition: all .3s ease;
+}
+
+.links ul li:hover::after {
+    width: 100%;
 }
 
 .icon {

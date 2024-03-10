@@ -8,7 +8,7 @@ const Header = () => {
             <div className={classes.content + ' container'}>
                 <Logo />
                 <div className={classes.links}>
-                    <ul className={classes.socialLinks}>
+                    <ul>
                         <li>
                             <a href="https://www.linkedin.com/in/badr-elyatim-333811245/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className={classes.icon} /><span>Linkedin</span></a>
                         </li>
